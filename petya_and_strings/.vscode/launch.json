@@ -1,0 +1,45 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'petya_and_strings'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=petya_and_strings",
+          "--package=petya_and_strings"
+        ],
+        "filter": {
+          "name": "petya_and_strings",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'petya_and_strings'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=petya_and_strings",
+          "--package=petya_and_strings"
+        ],
+        "filter": {
+          "name": "petya_and_strings",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
