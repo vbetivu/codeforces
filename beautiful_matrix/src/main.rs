@@ -15,6 +15,7 @@ fn main() {
             current_row = row_index;
 
             current_column = row.find('1').unwrap() as i32 / 2 + 1;
+
             break;
         }
 
